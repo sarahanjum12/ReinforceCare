@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f9ff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #00796b;
+            color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        .recommendation {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+
+        .recommendation p {
+            margin: 5px 0;
+            line-height: 1.5;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        a {
+            color: #ffccbc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Recommendation Result</h1>
+        <div class="recommendation">
+            <!-- Display the type of recommendation (Diet, Medication, Workout) -->
+            <p><strong>Recommended Type:</strong> {{ recommendation_type }}</p>
+
+            <!-- Display the actual recommendation -->
+            <p><strong>Recommendation:</strong> {{ recommendation }}</p>
+        </div>
+
+        <div class="footer">
+            <p>Thank you for using our healthcare recommendation system!</p>
+            <p><a href="/">Go back to the home page</a></p>
+        </div>
+    </div>
+</body>
+</html>
